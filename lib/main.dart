@@ -1,29 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:fuelease_customer_app/screens/userlogin/loginscreen.dart';
-import 'package:fuelease_customer_app/screens/usersignup/signupscreen.dart';
-
-// import 'WelcomeScreen.dart';
-void main() {
-  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
-    statusBarColor: Colors.transparent,
-  ));
-  runApp(const MyApp());
-}
-
+import 'on';
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        fontFamily: ('inter'),
-        useMaterial3: true,
+      title: 'fuelease',
+      theme: ThemeData(fontFamily: "Metropolis",
+      
+      
+      
+      colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
+      useMaterial3: true,
       ),
-      home:const loginScreen(),
+home: const StartupView(),
+
     );
   }
 }
+
