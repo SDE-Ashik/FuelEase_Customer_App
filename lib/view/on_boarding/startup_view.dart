@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fuelease_customer_app/view/login/welcome_view.dart';
 // import 'package:food_delivery/view/main_tabview/main_tabview.dart';
-
+import 'package:fuelease_customer_app/view/on_boarding/startup_view.dart';
 // import '../../common/globs.dart';
 
 class StartupView extends StatefulWidget {
@@ -12,27 +12,27 @@ class StartupView extends StatefulWidget {
 }
 
 class _StarupViewState extends State<StartupView> {
-  @override
-  void initState() {
-    super.initState();
-    goWelcomePage();
-  }
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   // goWelcomePage();
+  // }
 
-  void goWelcomePage() async {
+  // void goWelcomePage() async {
 
-      await Future.delayed( const Duration(seconds: 3) );
-      welcomePage();
-  }
-  void welcomePage(){
+  //     await Future.delayed( const Duration(seconds: 3) );
+  //     welcomePage();
+  // }
+  // // void welcomePage(){
 
-    if (Globs.udValueBool(Globs.userLogin)) {
-       Navigator.push(context,
-          MaterialPageRoute(builder: (context) => const MainTabView()));
-    }else{
-       Navigator.push(
-        context, MaterialPageRoute(builder: (context) => const WelcomeView()));
-    }
-  }
+  //   if (Globs.udValueBool(Globs.userLogin)) {
+  //      Navigator.push(context,
+  //         MaterialPageRoute(builder: (context) => const MainTabView()));
+  //   }else{
+  //      Navigator.push(
+  //       context, MaterialPageRoute(builder: (context) => const WelcomeView()));
+  //   }
+  // }
 
   @override
   Widget build(BuildContext context) {

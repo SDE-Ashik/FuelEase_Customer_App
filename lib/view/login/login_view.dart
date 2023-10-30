@@ -3,7 +3,7 @@ import 'package:fuelease_customer_app/common/color_extension.dart';
 import 'package:fuelease_customer_app/common_widget/round_button.dart';
 import 'package:fuelease_customer_app/common_widget/round_textfield.dart';
 import 'package:fuelease_customer_app/common_widget/round_icon_button.dart';
-
+import 'package:fuelease_customer_app/view/login/sign_up_view.dart';
 class LoginView extends StatefulWidget {
   const LoginView({super.key});
 
@@ -133,7 +133,14 @@ class _LoginViewState extends State<LoginView> {
               height: 80,
             ),
             TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const SignUpView(),
+                    ),
+                  );
+                },
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
@@ -144,13 +151,13 @@ class _LoginViewState extends State<LoginView> {
                           fontSize: 14,
                           fontWeight: FontWeight.w500),
                     ),
-
-                    Text("Sign Up",
-                    style: TextStyle(
-                      color: TColor.primary,
-                      fontSize: 14,
-                      fontWeight: FontWeight.w700
-                    ),),
+                    Text(
+                      "Sign Up",
+                      style: TextStyle(
+                          color: TColor.primary,
+                          fontSize: 14,
+                          fontWeight: FontWeight.w700),
+                    ),
                   ],
                 ))
           ],
