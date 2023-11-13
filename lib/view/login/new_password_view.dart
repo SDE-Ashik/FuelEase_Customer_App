@@ -3,17 +3,16 @@ import 'package:fuelease_customer_app/common/color_extension.dart';
 import 'package:fuelease_customer_app/common_widget/round_button.dart';
 import 'package:fuelease_customer_app/common_widget/round_textfield.dart';
 
-
 class NewPasswordView extends StatefulWidget {
-  final Map nObj;
-  const NewPasswordView({super.key, required this.nObj});
+  // final Map nObj;
+  const NewPasswordView({super.key});
+  // , required this.nObj});
 
   @override
   State<NewPasswordView> createState() => _NewPasswordViewState();
 }
 
 class _NewPasswordViewState extends State<NewPasswordView> {
-
   TextEditingController txtPassword = TextEditingController();
   TextEditingController txtConfirmPassword = TextEditingController();
 
@@ -65,10 +64,10 @@ class _NewPasswordViewState extends State<NewPasswordView> {
               const SizedBox(
                 height: 30,
               ),
-             RoundButton(title: "Next", onPressed: () {}),
-            const SizedBox(
-              height: 20,
-            ),
+              RoundButton(title: "Next", onPressed: () {}),
+              const SizedBox(
+                height: 20,
+              ),
             ],
           ),
         ),

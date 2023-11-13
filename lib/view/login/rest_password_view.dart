@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:fuelease_customer_app/common/color_extension.dart';
 import 'package:fuelease_customer_app/common_widget/round_button.dart';
 import 'package:fuelease_customer_app/common_widget/round_textfield.dart';
-import 'package:fuelease_customer_app/view/login/sign_up_view.dart';
+import 'package:fuelease_customer_app/view/login/new_password_view.dart';
+// import 'package:fuelease_customer_app/view/login/sign_up_view.dart';
 
-import '../../common_widget/round_icon_button.dart';
-import '../../common_widget/round_textfield.dart';
+// import '../../common_widget/round_icon_button.dart';
+// import '../../common_widget/round_textfield.dart';
 
 class ResetPasswordView extends StatefulWidget {
   const ResetPasswordView({super.key});
@@ -19,7 +20,6 @@ class _ResetPasswordViewState extends State<ResetPasswordView> {
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
@@ -37,11 +37,9 @@ class _ResetPasswordViewState extends State<ResetPasswordView> {
                     fontSize: 30,
                     fontWeight: FontWeight.w800),
               ),
-
               const SizedBox(
                 height: 15,
               ),
-
               Text(
                 "Please enter your email to receive a\n reset code to create a new password via email",
                 textAlign: TextAlign.center,
@@ -61,12 +59,17 @@ class _ResetPasswordViewState extends State<ResetPasswordView> {
               const SizedBox(
                 height: 30,
               ),
-
-              RoundButton(title: "Send", onPressed: () {}),
-            const SizedBox(
-              height: 20,
-            ),
-
+              RoundButton(
+                  title: "Send",
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const NewPasswordView()));
+                  }),
+              const SizedBox(
+                height: 20,
+              ),
             ],
           ),
         ),
@@ -86,4 +89,4 @@ class _ResetPasswordViewState extends State<ResetPasswordView> {
   //   serviceCallForgotRequest({
   //     "email": txtEmail.text
   //   });
-  }
+}

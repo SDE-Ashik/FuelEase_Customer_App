@@ -4,6 +4,7 @@ import 'package:fuelease_customer_app/common_widget/round_button.dart';
 import 'package:fuelease_customer_app/common_widget/round_textfield.dart';
 // import 'package:fuelease_customer_app/common_widget/round_icon_button.dart';
 import 'package:fuelease_customer_app/view/login/login_view.dart';
+import 'package:fuelease_customer_app/view/login/otp_view.dart';
 class SignUpView extends StatefulWidget {
   const SignUpView({super.key});
 
@@ -95,7 +96,14 @@ class _LoginViewState extends State<SignUpView> {
                 const SizedBox(
                   height: 25,
                 ),
-               RoundButton(title: "Signup", onPressed: () {}),
+               RoundButton(title: "Signup", onPressed: () {
+                                     Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const OTPView(),
+                        ),
+                      );
+               }),
             const SizedBox(
               height: 20,
             ),
@@ -133,6 +141,7 @@ class _LoginViewState extends State<SignUpView> {
           ],
         ),
       ),
-    ));
+    )
+    );
   }
 }

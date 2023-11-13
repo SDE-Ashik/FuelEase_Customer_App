@@ -3,7 +3,10 @@ import 'package:fuelease_customer_app/common/color_extension.dart';
 import 'package:fuelease_customer_app/common_widget/round_button.dart';
 import 'package:fuelease_customer_app/common_widget/round_textfield.dart';
 import 'package:fuelease_customer_app/common_widget/round_icon_button.dart';
+import 'package:fuelease_customer_app/view/login/rest_password_view.dart';
 import 'package:fuelease_customer_app/view/login/sign_up_view.dart';
+import 'package:fuelease_customer_app/view/on_boarding/on_boarding_view.dart';
+
 class LoginView extends StatefulWidget {
   const LoginView({super.key});
 
@@ -84,13 +87,29 @@ class _LoginViewState extends State<LoginView> {
             const SizedBox(
               height: 20,
             ),
-            RoundButton(title: "Login", onPressed: () {}),
+            RoundButton(title: "Login", onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const OnBoardingView(),
+                    ),
+                  );
+            }),
             const SizedBox(
               height: 20,
             ),
 
             TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                MaterialPageRoute(
+                  builder: (contex) =>ResetPasswordView(),
+                ),
+                );
+
+                
+              },
               child: Text(
                 "Forgot your password?",
                 style: TextStyle(
@@ -129,6 +148,7 @@ class _LoginViewState extends State<LoginView> {
               color: const Color(0xffDD4B39),
               onPressed: () {},
             ),
+           
             const SizedBox(
               height: 80,
             ),
@@ -159,7 +179,7 @@ class _LoginViewState extends State<LoginView> {
                           fontWeight: FontWeight.w700),
                     ),
                   ],
-                ))
+                ),)
           ],
         ),
       ),
