@@ -282,7 +282,7 @@ class _OTPViewState extends State<OTPView> {
                     cursorColor: Colors.indigo,
 
                     /// to choose cursor color
-                    upperChild: const Column(
+                    upperChild:  Column(
                       children: [
                         SizedBox(height: 30),
                         Icon(Icons.flutter_dash_outlined, size: 150),

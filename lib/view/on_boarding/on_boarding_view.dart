@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fuelease_customer_app/common/color_extension.dart';
 import 'package:fuelease_customer_app/common_widget/round_button.dart';
-
+import 'package:fuelease_customer_app/view/main_tabview/main_tabview.dart';
 // class OnBoardingView extends StatefulWidget {
 //   const OnBoardingView({super.key});
 
@@ -273,13 +273,13 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                     onPressed: () {
                       if (selectPage >= 2) {
                         // Home Screen
-                         print("Go Home");
-                        // Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(
-                        //     builder: (context) => const MainTabView(),
-                        //   ),
-                        // );
+                        //  print("Go Home");
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const MainTabView(),
+                          ),
+                        );
                       } else {
                         //Next Screen
 

@@ -103,14 +103,14 @@ class _MySplashScreenState extends State<MySplashScreen> {
               ),
               const Padding(
                 padding: EdgeInsets.all(18.0),
-                child: Column(
-                  children: [
-                    // Padding(
-                    //   padding: const EdgeInsets.all(70.0),
-                    //   child: Image.asset("assetes/img/applogo.png"),
-                    // ),
-                  ],
-                ),
+                // child: Column(
+                //   children: [
+                //     Padding(
+                //       padding: const EdgeInsets.all(70.0),
+                //       child: Image.asset("assetes/img/applogo.png"),
+                //     ),
+                //   ],
+                // ),
               ),
             ],
           ),

@@ -45,11 +45,11 @@ class _MainTabViewState extends State<MainTabView> {
         ),
       ),
       bottomNavigationBar: BottomAppBar(
-        surfaceTintColor: TColor.white,
-        shadowColor: Colors.black,
+        // surfaceTintColor: Colors.white,
+        // shadowColor: Colors.black,
         elevation: 1,
         notchMargin: 12,
-        height: 64,
+        // height: 64,
         shape: const CircularNotchedRectangle(),
         child: SafeArea(
           child: Row(

@@ -1,3 +1,4 @@
 {
-    "cmake.sourceDirectory": "C:/Users/ashia/flutter/tutorial/miniproject/FuelEase_customer_app/linux"
+    "cmake.sourceDirectory": "C:/Users/ashia/flutter/tutorial/miniproject/FuelEase_customer_app/linux",
+    "dart.flutterSdkPath": "C:\\flutter\\flutter"
 }
